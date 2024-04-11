@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{648B007F-0C17-4489-A911-6EF340F45E33}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{76FDC1EE-6FA9-44A4-91D5-3992BD109F16}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\MSBI\Project_1\ConditionalErrorZeroNegative.txt">
+          DTS:ConnectionString="E:\MSBI Projects\MSBI\Project_1\ConditionalErrorZeroNegative.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -38,7 +38,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerCode"
-              DTS:DTSID="{15D9F93A-EB15-4F5A-917F-0000DB7CCAC5}"
+              DTS:DTSID="{7FDA41B3-352D-41D0-A349-E51884D4D46A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerName"
-              DTS:DTSID="{41C3C68C-569F-4CB8-979F-727F254460C2}"
+              DTS:DTSID="{254F03C6-ADEE-4119-A523-51310FB29A1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerAmount"
-              DTS:DTSID="{A7EE6C88-4BFD-4D4F-8367-9E929C0A024D}"
+              DTS:DTSID="{518F9DD7-878A-44C9-9F15-7AC16DF45483}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,7 +65,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SalesDate"
-              DTS:DTSID="{F921C880-85CF-46D0-9566-A730B432F0C4}"
+              DTS:DTSID="{0E5008F0-A530-446A-8C9D-158AF3CA4E88}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -74,23 +74,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CUSTCAPS"
-              DTS:DTSID="{ECF587C0-625C-41EF-AD8C-0CB6FA66A00E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CustomerAmountCY"
-              DTS:DTSID="{1BFB1BDD-564C-48A0-8D4D-4172C8C5B4B4}"
+              DTS:DTSID="{5AB06DD4-06BA-4A1C-969F-B034F74CF3B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="7"
+              DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="LoggedDate"
-              DTS:DTSID="{0C90AAC4-4005-4E1A-AD9F-310A5EBB5D6E}"
+              DTS:ObjectName="CustomerAmountCY"
+              DTS:DTSID="{AE0A12D1-CBAD-4AFA-B664-954CF958076B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -109,7 +101,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\MSBI\Project_1\ConversionErrorsMoneyDT.txt">
+          DTS:ConnectionString="E:\MSBI Projects\MSBI\Project_1\ConversionErrorsMoneyDT.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -118,7 +110,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerCode"
-              DTS:DTSID="{32C3E115-37A0-4B91-AF9E-C5EB612A9975}"
+              DTS:DTSID="{9BAA2AC2-2D72-41E4-8B4A-FC208D873A1C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -127,7 +119,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerName"
-              DTS:DTSID="{82A07651-F202-4CFF-A156-D3F656372374}"
+              DTS:DTSID="{B247E0F4-4674-4705-86F1-EEADB0AE1D47}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -136,7 +128,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerAmount"
-              DTS:DTSID="{ADE94377-93EF-4196-8097-2B8214E8890A}"
+              DTS:DTSID="{DEC3A1CA-5BB0-4218-A631-02D6D0D27FC5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -145,7 +137,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SalesDate"
-              DTS:DTSID="{614934C4-8367-40C5-AD8F-6B8E9B4340E2}"
+              DTS:DTSID="{BA33A884-2EB7-4D7F-8171-EC20C3E3F774}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -154,7 +146,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CUSTCAPS"
-              DTS:DTSID="{7310D21E-34FF-4C91-9835-E6A007ECD343}"
+              DTS:DTSID="{533FD9F6-6A43-45FB-A686-757782EBF637}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -162,7 +154,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{5379E0AD-F946-4227-93DE-7D3083D024A5}"
+              DTS:DTSID="{9EEACD92-5944-4C75-B7DF-06558D81318A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -170,7 +162,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{74B07866-D612-48CA-9C16-AB8C99250A9E}"
+              DTS:DTSID="{9EF10774-8B5B-49F0-A835-1827A36E9699}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -191,7 +183,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\MSBI\Project_1\Customer1.txt">
+          DTS:ConnectionString="E:\MSBI Projects\MSBI\Project_1\Customer1.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -200,7 +192,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerCode"
-              DTS:DTSID="{4C2F98F6-511C-46CA-9038-D7E6B6784325}"
+              DTS:DTSID="{D355ABD8-775A-4BC6-BCB1-1DC703DF3133}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -209,7 +201,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerName"
-              DTS:DTSID="{ED62E4A8-9ACC-49AE-B9F4-54AFCC7C359D}"
+              DTS:DTSID="{70E050D7-5358-4DBC-B9A6-14E6C2A498A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -218,7 +210,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerAmount"
-              DTS:DTSID="{6B9DD837-C9C1-45D3-8FED-2D269EA2E157}"
+              DTS:DTSID="{1C19CC5C-C7A5-466A-B8EA-07E1E89568AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -227,7 +219,63 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SalesDate"
-              DTS:DTSID="{44CF5EA8-002A-40AB-8CAB-1E5DBE9E068E}"
+              DTS:DTSID="{86AF9447-BF7D-4041-BB51-05EBE264225A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D1559093-DA1B-44E0-9EF2-D76BD9865D71}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\MSBI Projects\MSBI\Project_1\Customer1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCode"
+              DTS:DTSID="{126A8414-98C1-4A8C-A786-1B8D686C0304}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerName"
+              DTS:DTSID="{959B4F7D-A920-46A6-B5CC-23368BF20195}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmount"
+              DTS:DTSID="{E6375EB8-50F8-4C38-9C2E-06B3D81255D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{69577F92-F5A7-4909-9961-854796E56B33}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -757,10 +805,6 @@
                       dataType="wstr"
                       length="50"
                       name="CUSTCAPS" />
-                    <externalMetadataColumn
-                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[LoggedDate]"
-                      dataType="date"
-                      name="LoggedDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -918,8 +962,8 @@
               <connections>
                 <connection
                   refId="Package\Load CSV\read from CSV.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[CSV Connection 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[CSV Connection 1]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1151,45 +1195,17 @@
           Id="Package\Load CSV\Cust Data Warehouse"
           TopLeft="41.9642864289333,336.044122191655" />
         <NodeLayout
-          Size="146.4,41.6"
-          Id="Package\Load CSV\read from CSV"
-          TopLeft="374.642863522987,5.73529419808235" />
-        <NodeLayout
           Size="261.6,41.6"
           Id="Package\Load CSV\Error due to Conersion of Cust Amount"
           TopLeft="481.250008195639,209.617649605942" />
         <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Load CSV\read from CSV"
+          TopLeft="374.642863522987,5.73529419808235" />
+        <NodeLayout
           Size="132,41.6"
           Id="Package\Load CSV\CAPS CUST"
           TopLeft="383.928577966836,76.6911774760299" />
-        <EdgeLayout
-          Id="Package\Load CSV.Paths[Data Conversion Output]"
-          TopLeft="357.142863224964,178.800001823201">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-79.7714316124824,42.2882361789063"
-              Start="0,0"
-              End="-79.7714316124824,34.7882361789063">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-75.7714316124824,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-75.7714316124824,0"
-                    Point2="-79.7714316124824,0"
-                    Point3="-79.7714316124824,4" />
-                  <mssgle:LineSegment
-                    End="-79.7714316124824,34.7882361789063" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load CSV.Paths[Data Conversion Error Output]"
           TopLeft="565.142863224964,178.800001823201">
@@ -1340,6 +1356,34 @@
                     Point3="11.2142852581281,23.8544121735855" />
                   <mssgle:LineSegment
                     End="11.2142852581281,32.208824347171" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load CSV.Paths[Data Conversion Output]"
+          TopLeft="357.142863224964,178.800001823201">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-79.7714316124824,42.2882361789063"
+              Start="0,0"
+              End="-79.7714316124824,34.7882361789063">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-75.7714316124824,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-75.7714316124824,0"
+                    Point2="-79.7714316124824,0"
+                    Point3="-79.7714316124824,4" />
+                  <mssgle:LineSegment
+                    End="-79.7714316124824,34.7882361789063" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
