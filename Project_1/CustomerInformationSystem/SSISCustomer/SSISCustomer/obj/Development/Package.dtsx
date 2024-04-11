@@ -1,0 +1,1363 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/10/2024 12:46:10 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TYC-322"
+  DTS:CreatorName="TYC-322\Tychons"
+  DTS:DTSID="{B7BD12A9-3D3D-4850-A343-CA40B149068D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{648B007F-0C17-4489-A911-6EF340F45E33}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Conditional Error connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{19D8C92D-2072-404E-A383-1782D551B041}"
+      DTS:ObjectName="Conditional Error connection">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\MSBI\Project_1\ConditionalErrorZeroNegative.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCode"
+              DTS:DTSID="{15D9F93A-EB15-4F5A-917F-0000DB7CCAC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerName"
+              DTS:DTSID="{41C3C68C-569F-4CB8-979F-727F254460C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmount"
+              DTS:DTSID="{A7EE6C88-4BFD-4D4F-8367-9E929C0A024D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{F921C880-85CF-46D0-9566-A730B432F0C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CUSTCAPS"
+              DTS:DTSID="{ECF587C0-625C-41EF-AD8C-0CB6FA66A00E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmountCY"
+              DTS:DTSID="{1BFB1BDD-564C-48A0-8D4D-4172C8C5B4B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LoggedDate"
+              DTS:DTSID="{0C90AAC4-4005-4E1A-AD9F-310A5EBB5D6E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Coversion Error Connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5FC0F59A-BEC0-4DC8-90EF-FC2D2F7E5A82}"
+      DTS:ObjectName="Coversion Error Connection">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\MSBI\Project_1\ConversionErrorsMoneyDT.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCode"
+              DTS:DTSID="{32C3E115-37A0-4B91-AF9E-C5EB612A9975}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerName"
+              DTS:DTSID="{82A07651-F202-4CFF-A156-D3F656372374}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmount"
+              DTS:DTSID="{ADE94377-93EF-4196-8097-2B8214E8890A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{614934C4-8367-40C5-AD8F-6B8E9B4340E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CUSTCAPS"
+              DTS:DTSID="{7310D21E-34FF-4C91-9835-E6A007ECD343}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{5379E0AD-F946-4227-93DE-7D3083D024A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{74B07866-D612-48CA-9C16-AB8C99250A9E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV Connection 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Begin of the CSV Connect"
+      DTS:DTSID="{28843270-50F3-4C66-8953-ACBBC753F6AB}"
+      DTS:ObjectName="CSV Connection 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\MSBI\Project_1\Customer1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCode"
+              DTS:DTSID="{4C2F98F6-511C-46CA-9038-D7E6B6784325}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerName"
+              DTS:DTSID="{ED62E4A8-9ACC-49AE-B9F4-54AFCC7C359D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerAmount"
+              DTS:DTSID="{6B9DD837-C9C1-45D3-8FED-2D269EA2E157}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{44CF5EA8-002A-40AB-8CAB-1E5DBE9E068E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TYC-322.CustomerDataWareHouse]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{5F6D35DD-469E-4F5B-8428-E8141F40E816}"
+      DTS:ObjectName="TYC-322.CustomerDataWareHouse">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=TYC-322;Initial Catalog=CustomerDataWareHouse;Integrated Security=True;Application Name=SSIS-Package-{5F6D35DD-469E-4F5B-8428-E8141F40E816}TYC-322.CustomerDataWareHouse;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load CSV"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{90D9FE18-6CF8-470D-9487-A75C8F7FC4E7}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load CSV"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load CSV\CAPS CUST"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="CAPS CUST"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load CSV\CAPS CUST.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load CSV\CAPS CUST.Inputs[Derived Column Input].Columns[CustomerName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerName"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerName]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Load CSV\CAPS CUST.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Output].Columns[CUSTCAPS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Output].Columns[CUSTCAPS]"
+                      name="CUSTCAPS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER](#{Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerName]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(CustomerName)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Load CSV\CAPS CUST.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load CSV\Conditional Split for Error"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split for Error"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load CSV\Conditional Split for Error.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load CSV\Conditional Split for Error.Inputs[Conditional Split Input].Columns[CustomerAmountCY]"
+                      cachedDataType="cy"
+                      cachedName="CustomerAmountCY"
+                      lineageId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Output].Columns[CustomerAmountCY]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load CSV\Conditional Split for Error.Outputs[Error]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Error"
+                  synchronousInputId="Package\Load CSV\Conditional Split for Error.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Output].Columns[CustomerAmountCY]} &lt;= 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">CustomerAmountCY &lt;= 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load CSV\Conditional Split for Error.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Load CSV\Conditional Split for Error.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load CSV\Conditional Split for Error.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Load CSV\Conditional Split for Error.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load CSV\Conditional Split for Error.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\Conditional Split for Error.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load CSV\Conditional Split for Error.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\Conditional Split for Error.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load CSV\Cust Data Warehouse"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="Cust Data Warehouse"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."tblCustomer"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load CSV\Cust Data Warehouse.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[TYC-322.CustomerDataWareHouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[TYC-322.CustomerDataWareHouse]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].Columns[CustomerCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerCode"
+                      externalMetadataColumnId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerCode]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerCode]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].Columns[CustomerAmount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerAmount"
+                      externalMetadataColumnId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerAmount]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].Columns[SalesDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesDate"
+                      externalMetadataColumnId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[SalesDate]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[SalesDate]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].Columns[CUSTCAPS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CUSTCAPS"
+                      externalMetadataColumnId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerName]"
+                      lineageId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Output].Columns[CUSTCAPS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerCode]"
+                      dataType="wstr"
+                      length="50"
+                      name="CustomerCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerName]"
+                      dataType="wstr"
+                      length="50"
+                      name="CustomerName" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[CustomerAmount]"
+                      dataType="numeric"
+                      name="CustomerAmount"
+                      precision="19"
+                      scale="255" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input].ExternalColumns[SalesDate]"
+                      dataType="dbTimeStamp"
+                      name="SalesDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load CSV\Cust Data Warehouse.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\Cust Data Warehouse.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load CSV\Cust Data Warehouse.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\Cust Data Warehouse.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load CSV\Customer Amnt DT Convert"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Customer Amnt DT Convert"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load CSV\Customer Amnt DT Convert.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load CSV\Customer Amnt DT Convert.Inputs[Data Conversion Input].Columns[CustomerAmount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerAmount"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Load CSV\Customer Amnt DT Convert.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Output].Columns[CustomerAmountCY]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Output].Columns[CustomerAmountCY]"
+                      name="CustomerAmountCY"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Load CSV\Customer Amnt DT Convert.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load CSV\Error due to amount number"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="16393"
+              name="Error due to amount number"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load CSV\Error due to amount number.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conditional Error connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conditional Error connection]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].Columns[CustomerCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerCode"
+                      externalMetadataColumnId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CustomerCode]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerCode]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].Columns[CustomerName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerName"
+                      externalMetadataColumnId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CustomerName]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerName]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].Columns[CustomerAmount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerAmount"
+                      externalMetadataColumnId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmount]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].Columns[SalesDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesDate"
+                      externalMetadataColumnId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[SalesDate]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[SalesDate]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].Columns[CustomerAmountCY]"
+                      cachedDataType="cy"
+                      cachedName="CustomerAmountCY"
+                      externalMetadataColumnId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmountCY]"
+                      lineageId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Output].Columns[CustomerAmountCY]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].Columns[CUSTCAPS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CUSTCAPS"
+                      externalMetadataColumnId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CUSTCAPS]"
+                      lineageId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Output].Columns[CUSTCAPS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CustomerCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CustomerName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerName" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[SalesDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SalesDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmountCY]"
+                      dataType="cy"
+                      name="CustomerAmountCY" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[CUSTCAPS]"
+                      dataType="wstr"
+                      length="50"
+                      name="CUSTCAPS" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input].ExternalColumns[LoggedDate]"
+                      dataType="date"
+                      name="LoggedDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Load CSV\Error due to Conersion of Cust Amount"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="16393"
+              name="Error due to Conersion of Cust Amount"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load CSV\Error due to Conersion of Cust Amount.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Coversion Error Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[Coversion Error Connection]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].Columns[CustomerCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerCode"
+                      externalMetadataColumnId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[CustomerCode]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerCode]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].Columns[CustomerName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerName"
+                      externalMetadataColumnId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[CustomerName]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerName]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].Columns[CustomerAmount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerAmount"
+                      externalMetadataColumnId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmount]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].Columns[SalesDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesDate"
+                      externalMetadataColumnId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[SalesDate]"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[SalesDate]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].Columns[CUSTCAPS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CUSTCAPS"
+                      externalMetadataColumnId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[CUSTCAPS]"
+                      lineageId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Output].Columns[CUSTCAPS]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[CustomerCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[CustomerName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerName" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[CustomerAmount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[SalesDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SalesDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[CUSTCAPS]"
+                      dataType="wstr"
+                      length="50"
+                      name="CUSTCAPS" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Load CSV\read from CSV"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="16393"
+              name="read from CSV"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load CSV\read from CSV.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV Connection 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV Connection 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerCode]"
+                      length="50"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerCode]"
+                      name="CustomerCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerName]"
+                      length="50"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerName]"
+                      name="CustomerName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerAmount]"
+                      length="50"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[CustomerAmount]"
+                      name="CustomerAmount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[SalesDate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].ExternalColumns[SalesDate]"
+                      length="50"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].Columns[SalesDate]"
+                      name="SalesDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerName" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].ExternalColumns[CustomerAmount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output].ExternalColumns[SalesDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SalesDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load CSV\read from CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load CSV\read from CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load CSV.Paths[Conditional Split Default Output]"
+              endId="Package\Load CSV\Cust Data Warehouse.Inputs[ADO NET Destination Input]"
+              name="Conditional Split Default Output"
+              startId="Package\Load CSV\Conditional Split for Error.Outputs[Conditional Split Default Output]" />
+            <path
+              refId="Package\Load CSV.Paths[Data Conversion Error Output]"
+              endId="Package\Load CSV\Error due to Conersion of Cust Amount.Inputs[Flat File Destination Input]"
+              name="Data Conversion Error Output"
+              startId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Error Output]" />
+            <path
+              refId="Package\Load CSV.Paths[Data Conversion Output]"
+              endId="Package\Load CSV\Conditional Split for Error.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\Load CSV\Customer Amnt DT Convert.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Load CSV.Paths[Derived Column Output]"
+              endId="Package\Load CSV\Customer Amnt DT Convert.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Load CSV\CAPS CUST.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Load CSV.Paths[Error]"
+              endId="Package\Load CSV\Error due to amount number.Inputs[Flat File Destination Input]"
+              name="Error"
+              startId="Package\Load CSV\Conditional Split for Error.Outputs[Error]" />
+            <path
+              refId="Package\Load CSV.Paths[Flat File Source Output]"
+              endId="Package\Load CSV\CAPS CUST.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Load CSV\read from CSV.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="123.2,41.6"
+          Id="Package\Load CSV"
+          TopLeft="82.8571442681916,51.2352948362027" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load CSV">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="213.6,41.6"
+          Id="Package\Load CSV\Error due to amount number"
+          TopLeft="281.25000478966,334.602945855126" />
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\Load CSV\Customer Amnt DT Convert"
+          TopLeft="357.142863224964,158.000001823201" />
+        <NodeLayout
+          Size="197.6,41.6"
+          Id="Package\Load CSV\Conditional Split for Error"
+          TopLeft="178.571431612482,221.088238002107" />
+        <NodeLayout
+          Size="180.8,41.6"
+          Id="Package\Load CSV\Cust Data Warehouse"
+          TopLeft="41.9642864289333,336.044122191655" />
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Load CSV\read from CSV"
+          TopLeft="374.642863522987,5.73529419808235" />
+        <NodeLayout
+          Size="261.6,41.6"
+          Id="Package\Load CSV\Error due to Conersion of Cust Amount"
+          TopLeft="481.250008195639,209.617649605942" />
+        <NodeLayout
+          Size="132,41.6"
+          Id="Package\Load CSV\CAPS CUST"
+          TopLeft="383.928577966836,76.6911774760299" />
+        <EdgeLayout
+          Id="Package\Load CSV.Paths[Data Conversion Output]"
+          TopLeft="357.142863224964,178.800001823201">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-79.7714316124824,42.2882361789063"
+              Start="0,0"
+              End="-79.7714316124824,34.7882361789063">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-75.7714316124824,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-75.7714316124824,0"
+                    Point2="-79.7714316124824,0"
+                    Point3="-79.7714316124824,4" />
+                  <mssgle:LineSegment
+                    End="-79.7714316124824,34.7882361789063" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load CSV.Paths[Data Conversion Error Output]"
+          TopLeft="565.142863224964,178.800001823201">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="46.9071449706748,30.8176477827415"
+              Start="0,0"
+              End="46.9071449706748,23.3176477827415">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="42.9071449706748,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="42.9071449706748,0"
+                    Point2="46.9071449706748,0"
+                    Point3="46.9071449706748,4" />
+                  <mssgle:LineSegment
+                    End="46.9071449706748,23.3176477827415" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-19.1792417480752,-17.43359375,132.1727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load CSV.Paths[Conditional Split Default Output]"
+          TopLeft="277.371431612482,262.688238002107">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-145.007145183549,73.355884189548"
+              Start="0,0"
+              End="-145.007145183549,65.855884189548">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.677942094774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.677942094774"
+                    Point2="0,36.677942094774"
+                    Point3="-4,36.677942094774" />
+                  <mssgle:LineSegment
+                    End="-141.007145183549,36.677942094774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-141.007145183549,36.677942094774"
+                    Point2="-145.007145183549,36.677942094774"
+                    Point3="-145.007145183549,40.677942094774" />
+                  <mssgle:LineSegment
+                    End="-145.007145183549,65.855884189548" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-143.117478841775,41.677942094774,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load CSV.Paths[Flat File Source Output]"
+          TopLeft="448.885720744912,47.3352941980824">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.3558832779476"
+              Start="0,0"
+              End="0,21.8558832779476">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.8558832779476" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load CSV.Paths[Error]"
+          TopLeft="308.971431612482,262.688238002107">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="79.078573177178,71.914707853019"
+              Start="0,0"
+              End="79.078573177178,64.414707853019">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.1124600465234" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.1124600465234"
+                    Point2="0,29.1124600465234"
+                    Point3="4,29.1124600465234" />
+                  <mssgle:LineSegment
+                    End="75.078573177178,29.1124600465234" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75.078573177178,29.1124600465234"
+                    Point2="79.078573177178,29.1124600465234"
+                    Point3="79.078573177178,33.1124600465234" />
+                  <mssgle:LineSegment
+                    End="79.078573177178,64.414707853019" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="28.010595182339,34.1124600465234,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load CSV.Paths[Derived Column Output]"
+          TopLeft="449.928577966836,118.29117747603">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.2142852581281,39.708824347171"
+              Start="0,0"
+              End="11.2142852581281,32.208824347171">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.8544121735855" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.8544121735855"
+                    Point2="0,19.8544121735855"
+                    Point3="4,19.8544121735855" />
+                  <mssgle:LineSegment
+                    End="7.21428525812809,19.8544121735855" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.21428525812809,19.8544121735855"
+                    Point2="11.2142852581281,19.8544121735855"
+                    Point3="11.2142852581281,23.8544121735855" />
+                  <mssgle:LineSegment
+                    End="11.2142852581281,32.208824347171" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\Cust Data Warehouse">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
